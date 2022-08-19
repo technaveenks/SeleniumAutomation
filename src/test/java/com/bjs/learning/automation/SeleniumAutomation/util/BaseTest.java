@@ -11,7 +11,7 @@ public class BaseTest {
 	@BeforeClass
 	public void createDriver() {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\navee\\Trainings\\SeleniumAutomation\\lib\\chromedriver.exe");
+				System.getProperty("user.dir")+"\\lib\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.amazon.in");
 	}
